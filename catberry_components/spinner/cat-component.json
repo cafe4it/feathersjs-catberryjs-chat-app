@@ -1,0 +1,5 @@
+{
+	"name": "spinner",
+	"template": "./template.hbs",
+	"errorTemplate": "./error.hbs"
+}

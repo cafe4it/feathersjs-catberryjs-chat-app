@@ -1,0 +1,64 @@
+{
+  "name": "feathers-catberry-chat-app",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src/",
+  "browser": {
+    "./config/environment.json": "./config/browser.json"
+  },
+  "keywords": [
+    "feathers"
+  ],
+  "license": "MIT",
+  "repository": {},
+  "author": {},
+  "contributors": [],
+  "bugs": {},
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "scripts": {
+    "test": "npm run jshint && npm run mocha",
+    "jshint": "jshint server/. test/. --config",
+    "mocha": "mocha test/ --recursive",
+    "start": "npm run release",
+    "release": "node ./build.js release && node ./src/app.js release",
+    "debug": "node ./build.js & node ./src/app.js",
+    "debug-win": "powershell -Command \"Start-Process -NoNewWindow node ./build.js; Start-Process -NoNewWindow -Wait node ./server.js\""
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "catberry": "^8.0.0",
+    "catberry-assets": "^4.0.2",
+    "catberry-handlebars": "^3.0.1",
+    "catberry-logger": "^1.0.0",
+    "catberry-uhr": "^5.0.0",
+    "compression": "^1.6.2",
+    "cors": "^2.7.1",
+    "errorhandler": "^1.4.3",
+    "express": "^4.13.4",
+    "feathers": "^2.0.1",
+    "feathers-authentication": "^0.7.9",
+    "feathers-configuration": "^0.2.3",
+    "feathers-errors": "^2.4.0",
+    "feathers-hooks": "^1.5.5",
+    "feathers-localstorage": "^0.4.1",
+    "feathers-nedb": "^2.4.1",
+    "feathers-rest": "^1.4.3",
+    "feathers-socketio": "^1.4.1",
+    "localStorage": "^1.0.3",
+    "nedb": "^1.8.0",
+    "passport": "^0.3.2",
+    "serve-favicon": "^2.3.0",
+    "serve-static": "^1.10.2",
+    "socket.io-client": "^1.4.8",
+    "superagent": "^1.8.4",
+    "winston": "^2.2.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.2",
+    "mocha": "^3.0.2",
+    "request": "^2.74.0"
+  }
+}

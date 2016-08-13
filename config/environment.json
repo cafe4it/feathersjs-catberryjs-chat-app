@@ -1,0 +1,9 @@
+{
+	"title": "Chat App | FeathersJS + CatBerryJS",
+	"server": {
+		"port": 3000
+	},
+	"logger": {
+		"level": 0
+	}
+}
